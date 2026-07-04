@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 20th Birthday, Rica!</title>
+  <link rel="stylesheet" href="BDAYCSSriri.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  >
+<body class="no-scroll">
+  <!-- Decorative animated background -->
+  <div class="background-magic" id="backgroundMagic"></div>
+  <!-- Confetti and temporary party effects are injected here -->
+  <div class="confetti-layer" id="confettiLayer"></div>
+  <div class="effect-layer" id="effectLayer"></div>
+  <!-- Landing screen -->
+  <div class="landing" id="landing">
+    <div class="landing-card">
+      <h1>Happy 20th Birthday Ricaaa!</h1>
+      <p>Happy birthday to someone who makes the world better :'></p>
+      <button class="surprise-btn" id="openSurprise">Open Your Surprise</button>
+    </div>
+  </div>
+  <!-- Main website -->
+  <main class="site" id="site">
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <h2 class="hero-title">For You :'> </h2>
+        <div class="cake-zone" id="cakeZone">
+          <div class="cake-glow"></div>
+          <div class="cake-stage" id="cakeStage">
+            <!-- Cake pieces drop in sequence using JavaScript -->
+            <div class="cake-piece stand" data-delay="0"></div>
+            <div class="cake-piece bottom-layer" data-delay="850"></div>
+            <div class="cake-piece filling" data-delay="1650"></div>
+            <div class="cake-piece middle-layer" data-delay="2400"></div>
+            <div class="cake-piece frosting" data-delay="3150"></div>
+            <div class="cake-piece top-layer" data-delay="3900"></div>
+            <div class="cake-piece decorations" data-delay="4650"></div>
+            <div class="cake-piece cherries" data-delay="5350"></div>
+            <div class="cake-piece candle" data-delay="6100">
+              <div class="flame" id="flame"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info-section" id="birthdayInfo">
+      <div class="glass-panel" id="counterPanel">
+        <h2 class="panel-title">🎂 Your Birthday Information</h2>
+        <div class="counter-grid">
+          <div class="time-card">
+            <strong id="years">0</strong>
+            <span>Years</span>
+          </div>
+          <div class="time-card">
+            <strong id="months">0</strong>
+            <span>Months</span>
+          </div>
+          <div class="time-card">
+            <strong id="days">0</strong>
+            <span>Days</span>
+          </div>
+          <div class="time-card">
+            <strong id="hours">0</strong>
+            <span>Hours</span>
+          </div>
+          <div class="time-card">
+            <strong id="minutes">0</strong>
+            <span>Minutes</span>
+          </div>
+          <div class="time-card">
+            <strong id="seconds">0</strong>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <p class="next-birthday" id="nextBirthday"></p><p>:'D</p>
+      </div>
+      <div class="letter" id="birthdayLetter">
+        Cheers to all the memories we made together, Wishing you nothing but absolute happiness today and always :&gt;
+      </div>
+    </section>
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title">Little Memories</h2>
+      <div class="gallery">
+        <!-- Replace these image URLs with your own photos -->
+        <div class="photo-card">
+          <img src="10.jfif" alt="Memory photo 1">
+        </div>
+        <div class="photo-card">
+          <img src="2.jfif" alt="Memory photo 2">
+        </div>
+        <div class="photo-card">
+          <img src="5.jfif" alt="Memory photo 3">
+        </div>
+        <div class="photo-card">
+          <img src="3.jfif" alt="Memory photo 4">
+        </div>
+        <div class="photo-card">
+          <img src="1.jfif" alt="Memory photo 5">
+        </div>
+        <div class="photo-card">
+          <img src="9.jfif" alt="Memory photo 6">
+        </div>
+      </div>
+    </section>
+    <section class="ending">
+      <h2>So proud of u</h2>
+    </section>
+  </main>
+  <!-- Background music. Replace src with your own local file, for example: music.mp3 -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="Youre here thats the thing-Beabadoobee.mp3" type="audio/mpeg">
+  </audio>
+  <!-- Bottom-right music control -->
+  <button class="music-control" id="musicControl">🔊 Pause Music</button>
+  <script src="BDAYJSriri.js"></script>
+  </body>
+  </head>
